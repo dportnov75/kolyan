@@ -16,4 +16,10 @@ public class NotebookTest {
 		//Эти две строки эквивалентные. 
 		Assertions.assertTrue(notebook.getContacts().size() == 0);
 	}
+	@Test
+	public void test_notebook1() {
+		Notebook notebook = new Notebook();
+		List<Contact> contacts = notebook.getContacts();
+		Assertions.assertTrue(contacts.size() == 1);
+	}
 }
