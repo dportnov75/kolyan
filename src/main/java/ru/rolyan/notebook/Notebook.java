@@ -13,7 +13,13 @@ public class Notebook {
 	//Список контактов
 	private List<Contact> contacts = new LinkedList<>();
 	
-	public void dobavlenie (Contact contact) {
+	/**
+	 * Добавляет контакт в книгу
+	 * @param contact Контакт
+	 * @throws RuntimeException Контакт == null 
+	 */
+	public void add(Contact contact) throws RuntimeException {
+		if (...) throw RuntimeException("........");
 		contacts.add(contact);
 	}
 	
