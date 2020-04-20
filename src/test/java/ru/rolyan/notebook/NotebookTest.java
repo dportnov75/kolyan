@@ -19,6 +19,8 @@ public class NotebookTest {
 	@Test
 	public void test_notebook1() {
 		Notebook notebook = new Notebook();
+		Contact contact = new Contact("a","d","s");
+		notebook.addContact(contact);
 		List<Contact> contacts = notebook.getContacts();
 		Assertions.assertTrue(contacts.size() == 1);
 	}

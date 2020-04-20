@@ -18,8 +18,8 @@ public class Notebook {
 	 * @param contact Контакт
 	 * @throws RuntimeException Контакт == null 
 	 */
-	public void add(Contact contact) throws RuntimeException {
-		if (...) throw RuntimeException("........");
+	public void addContact(Contact contact) throws RuntimeException {
+		if (contact == null) throw new RuntimeException("неправильно добавлен контакт");
 		contacts.add(contact);
 	}
 	
