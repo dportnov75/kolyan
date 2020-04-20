@@ -37,6 +37,10 @@ public class Notebook {
 //Т.е. мы добавляем много контактов через метод add , а потом среди них надо найти Васю
 	public Contact findByName(String name) throws RuntimeException{
 		//Если передали пустое имя, или контакта нет в записной книжке, то генерим исключение
+		//Две строки сравниваются не ==      а вот так:
+		String s = "aaaa";
+		String h = "rrrrr";
+		System.out.println(s.equals(h));
 		
 	}
 	
