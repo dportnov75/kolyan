@@ -43,9 +43,9 @@ public class Notebook {
 				return contact;
 				
 			}
-			else throw new RuntimeException("такого контакта не существует");
+         return throw new RuntimeException("нет такого контакта");
 		}
-		return null;
+		
 		
 	}
 	
