@@ -35,12 +35,17 @@ public class Notebook {
 	//Новое задание!
 	//Надо реализовать метод по поиску в контактах, контакта с заданым именем.
 //Т.е. мы добавляем много контактов через метод add , а потом среди них надо найти Васю
-	public Contact findByName(String name) throws RuntimeException{
-		//Если передали пустое имя, или контакта нет в записной книжке, то генерим исключение
+	//Если передали пустое имя, или контакта нет в записной книжке, то генерим исключение
 		//Две строки сравниваются не ==      а вот так:
-		String s = "aaaa";
-		String h = "rrrrr";
-		System.out.println(s.equals(h));
+	public Contact findByName(String name) throws RuntimeException {
+		for (Contact contact : contacts) {
+			if (contact.getFirstName().equals(name)) {
+				return contact;
+				
+			}
+			else throw new RuntimeException("такого контакта не существует");
+		}
+		return null;
 		
 	}
 	
