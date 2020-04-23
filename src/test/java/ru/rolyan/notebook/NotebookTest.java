@@ -25,3 +25,14 @@ public class NotebookTest {
 		Assertions.assertTrue(contacts.size() == 1);
 	}
 }
+    @Test
+    public void test_notebook2() {
+	   Notebook notebook = new Notebook();
+	   Contact vasya = new Contact("a","d","s");
+	   Contact vasya1 = new Contact("b","d","s");
+	   notebook.addContact(vasya);
+	   notebook.addContact(vasya1);
+	   
+	   List<Contact> contacts = notebook.getContacts();
+	   Assertions.assertTrue(contacts.size() == 1);
+}
